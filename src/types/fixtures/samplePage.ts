@@ -1,5 +1,5 @@
-import { SamplePage } from "@/pageObjects/samplePage"
+import { LandingPage } from "@/pageObjects/landingPage"
 
-export interface SamplePageFixture {
-  samplePage: SamplePage
+export interface LandingPageFixture {
+  landingPage: LandingPage
 }

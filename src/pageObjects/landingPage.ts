@@ -1,7 +1,7 @@
-import { ISamplePage } from "@/types/pageObjects/base"
+import { ILandingPage as ILandingPage } from "@/types/pageObjects/base"
 import { expect, Locator, Page } from "@playwright/test"
 
-export class SamplePage implements ISamplePage {
+export class LandingPage implements ILandingPage {
   readonly page: Page
   static readonly url = ""
 
@@ -13,18 +13,18 @@ export class SamplePage implements ISamplePage {
   }
 
   private async waitToLoad(): Promise<void> {
-    await expect(this.page).toHaveURL(new RegExp(SamplePage.url))
+    await expect(this.page).toHaveURL(new RegExp(LandingPage.url))
     await expect(this.heading).toBeVisible()
   }
 
-  public static async use(page: Page): Promise<SamplePage> {
-    const samplePage = new SamplePage(page)
+  public static async use(page: Page): Promise<LandingPage> {
+    const samplePage = new LandingPage(page)
     await samplePage.waitToLoad()
     return samplePage
   }
 
-  public static async navigateTo(page: Page): Promise<SamplePage> {
-    await page.goto(SamplePage.url)
+  public static async navigateTo(page: Page): Promise<LandingPage> {
+    await page.goto(LandingPage.url)
     return await this.use(page)
   }
 

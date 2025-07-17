@@ -8,4 +8,4 @@ export interface IPage extends IPageObject {
   getHeading(page: Page): Locator
 }
 
-export interface ISamplePage extends IPage {}
+export interface ILandingPage extends IPag{}

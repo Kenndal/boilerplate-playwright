@@ -41,15 +41,15 @@ boilerplate-playwright/
 │   ├── constants/             # Project constants
 │   │   └── timeouts.ts        # Timeout configurations
 │   ├── fixtures/              # Test fixtures
-│   │   └── samplePage.ts      # Page object fixtures
+│   │   └── landingPage.ts     # Page object fixtures
 │   ├── pageObjects/           # Page Object Models
-│   │   └── samplePage.ts      # Sample page implementation
+│   │   └── landingPage.ts     # Landing page implementation
 │   └── types/                 # TypeScript type definitions
 │       ├── api/               # API-related types
 │       ├── fixtures/          # Fixture types
 │       └── pageObjects/       # Page object types
 ├── tests/                     # Test files
-│   └── samplePage.test.ts     # Sample test implementation
+│   └── landingPage.test.ts    # Landing test implementation
 ├── playwright-report/         # HTML test reports
 ├── test-results/              # Test execution artifacts
 ├── playwright.config.ts      # Playwright configuration
